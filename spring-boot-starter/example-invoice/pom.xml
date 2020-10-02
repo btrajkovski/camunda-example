@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-    <camunda.version>7.13.0-ee</camunda.version>
+    <camunda.version>7.13.0</camunda.version>
     <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
   </properties>
 
@@ -31,14 +31,11 @@
   </dependencyManagement>
 
   <dependencies>
-    <dependency>
-      <groupId>org.camunda.bpm.springboot</groupId>
-      <artifactId>camunda-bpm-spring-boot-starter-webapp-ee</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.camunda.bpm.springboot</groupId>
-      <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
-    </dependency>
+      <dependency>
+          <groupId>org.camunda.bpm.springboot</groupId>
+          <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
+          <version>${camunda.version}</version>
+      </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-jdbc</artifactId>
@@ -82,7 +79,7 @@
     <dependency>
       <groupId>org.camunda.bpm.example</groupId>
       <artifactId>camunda-example-invoice</artifactId>
-      <version>${camunda.version}</version>
+      <version>7.13.0</version>
       <classifier>classes</classifier>
       <scope>compile</scope>
     </dependency>

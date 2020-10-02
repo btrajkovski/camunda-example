@@ -23,7 +23,7 @@ import org.springframework.stereotype.Service;
 /**
  * Use this delegate instead of TweetContentDelegate, if you don't want to access Twitter, but just to do some sysout.
  */
-@Service("tweetAdapter")
+//@Service("tweetAdapter")
 public class TweetContentOfflineDelegate implements JavaDelegate {
 
   public void execute(DelegateExecution execution) throws Exception {
